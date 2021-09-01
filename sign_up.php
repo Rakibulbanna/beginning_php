@@ -1,54 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Conmebol Copa America 2021</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- stylesheet add -->
+    <link rel="stylesheet" href="file:///D:/xampp/htdocs/session/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- fabicon add-->
+    <link rel="shortcut icon" href="images/favicon.jpeg" type="image/x-icon">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log In</title>
+    <!-- font awesome kit add-->
+    <script src="https://kit.fontawesome.com/bf3ff6b95a.js" crossorigin="anonymous"></script>
+
     <style>
-        .sign_up {
-            border: 2px solid black;
-            padding: 10px 200px;
+    body {
+      text-align: center;
+      font-family: 'Poppins';
+      width: 100%;
+    height: auto;
+    background: #2D25A0;
+    color: white;
+    }
 
-        }
-        body{
-          text-align:center;
-        }
+    .sign_up {
+                border: 4px solid white;
+                padding-left: 50px;
+                padding-right: 50px;
+                margin-left: 32%;
+                margin-right: 32%;
+                margin-top: 5%;
+                border-radius: 3%;
+                padding-bottom: 20px;
+            }
 
-        input[type=email],
-        input[type=password] {
-            width: 100%;
-            padding: 12px 20px;
-            margin: 8px 0;
-            display: inline-block;
-            border: 1px solid #ccc;
-            box-sizing: border-box;
-        }
-        input[type=submit] {
-            background-color: #000000;
-            color: white;
-            padding: 14px 20px;
-            margin: 15px 0;
-            border: none;
-            cursor: pointer;
-            width: 100%;
-        }
+            input[type=email],
+            input[type=password] {
+                width: 100%;
+                padding: 12px 20px;
+                margin-top: 10px;
+                display: inline-block;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+                border-radius: 2%;
+            }
+            input[type=submit],a {
+                background-color: #E02C6D;
+                color:white;
+                padding: 14px 20px;
+                margin: 15px 0;
+                border: none;
+                cursor: pointer;
+                width: 30%;
+                border-radius: 5%;
+                text-decoration: none;
+            }
+            h1{
+                font-size: 60px;
+            }
+
     </style>
-</head>
+  </head>
+  <body>
 
-<body>
 
-    <form class="sign_up" action="sign_up.php" method="post" style="text-align: center;">
 
-        <img src="cover.jpg" width="300">
-        <h1>Sign up</h1><br>
-        <strong>Give your Email&emsp;<input type="email" name="email" value=""></strong> <br><br>
-        <strong>Give a password&emsp;<input type="password" name="password" value=""></strong> <br>
-        <br>
-        <input type="submit" name="submit" value="submit">
+      <form class="sign_up" action="sign_up.php" method="post" style="text-align: center;">
 
-    </form>
+
+            <h1>Sign up</h1><br>
+            <strong>please give an email&emsp;</strong><input type="email" name="email" value=""placeholder="email"> <br><br>
+            <strong>please give a password&emsp;</strong><input type="password" name="password" value=""placeholder="password"><br><br>
+            <input type="submit" name="submit" value="submit">
+          </form>
 
 </body>
 <?php
@@ -67,17 +91,16 @@ if(isset($_POST["submit"])){
 
   if (mysqli_query($conn,$sql)){
 
-    echo "<h2>Account created successfully!!Now please go to "."<a href='dashboard.php'>"."<h3>login</h3>"."</a></h2>";
+    echo "<br>Account created successfully!!Now please go to <br><br><a href='dashboard.php'>login</a>";
     echo "<br>";
 
 
   }
 
 else {
-    echo "<br>"."<h2>This email is taken,give another one!!</h2>"."<br>";
+    echo "<br>"."<h2>This email is taken, give another one !!</h2>"."<br>";
     //echo "there is an error 1st".mysqli_error($conn);
   }
 }
  ?>
-
 </html>

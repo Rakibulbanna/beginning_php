@@ -23,7 +23,7 @@ $email=$_POST["email"];
 
   $sql2="DELETE FROM email_pass WHERE email='$email'";
   if (mysqli_query($conn,$sql2)){
-      echo "<h2>account deleted successfully</h2>";
+      echo "<br><h2>account deleted successfully</h2>";
   }
   else {
     echo "there is an error 2nd".mysqli_error($conn);

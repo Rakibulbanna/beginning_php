@@ -69,7 +69,15 @@
 
         if($row <= 0 )
         {
-          die ("<br>"."<h3 style='text-align: center;'>"."password or user name not matched"."</h3>");
+          die ("<br>"."<h3 style='text-align: center;color: #2D25A0;'>"."password or user name not matched<br>try again<br><br><a href='dashboard.php' style='background-color: #E02C6D;
+          color:white;
+          padding: 14px 20px;
+          margin: 15px 0;
+          border: none;
+          cursor: pointer;
+          width: 30%;
+          border-radius: 5%;
+          text-decoration: none;'>login</a>"."</h3>");
 
         }
         else {
