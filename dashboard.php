@@ -5,7 +5,7 @@
     <title>Conmebol Copa America 2021</title>
     <link rel="stylesheet" href="style.css">
     <!-- stylesheet add -->
-    <link rel="stylesheet" href="file:///D:/xampp/htdocs/session/style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- fabicon add-->
     <link rel="shortcut icon" href="images/favicon.jpeg" type="image/x-icon">
@@ -55,7 +55,7 @@
                 border-radius: 5%;
                 text-decoration: none;
             }
-            
+
             h1{
                 font-size: 60px;
             }
