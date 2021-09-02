@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Admin panel</title>
+    <title>Admin panel (191-35-2638)(football club management)</title></title>
 
     <!-- favicon -->
     <link rel="shortcut icon" href="images/fabicon.jpg" type="image/x-icon">
