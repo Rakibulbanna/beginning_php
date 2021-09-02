@@ -31,11 +31,11 @@
                 margin-right: 32%;
                 margin-top: 5%;
                 border-radius: 3%;
-                padding-bottom: 20px;
+                padding-bottom: 10px;
             }
 
             input[type=email],
-            input[type=password] {
+            input[type=password], input[type=name]{
                 width: 100%;
                 padding: 12px 20px;
                 margin-top: 10px;
@@ -69,7 +69,7 @@
 
 
             <h1>Sign up</h1><br>
-            <strong>please give an email&emsp;</strong><input type="email" name="email" value=""placeholder="email"> <br><br>
+           <strong>please give an email&emsp;</strong><input type="email" name="email" value=""placeholder="email"> <br><br>
             <strong>please give a password&emsp;</strong><input type="password" name="password" value=""placeholder="password"><br><br>
             <input type="submit" name="submit" value="submit">
           </form>
@@ -80,6 +80,7 @@ include_once "connection.php";
 
 
 if(isset($_POST["submit"])){
+
   $email=$_POST["email"];
   $password=$_POST["password"];
 

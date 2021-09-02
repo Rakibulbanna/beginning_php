@@ -1,4 +1,10 @@
-/* common styles */
+/* common styles
+
+Rakiob ul banna
+Id: 191-35-2638
+
+
+ */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 
@@ -9,6 +15,8 @@
 }
 body{
     font-family: 'Poppins';
+    background-color: #c0c0a5;
+
 }
 button{
     border: none;
@@ -49,12 +57,15 @@ h3{
 /*----------- header style starts---------------*/
 
 header{
-    width: 100%;
+    margin-left: 3%;
+    margin-right: 3%;
     height: auto;
     background: #2D25A0;
     color: white;
-
-
+}
+.list{
+     color: #2D25A0;
+     font-size: 60px;
 }
 
 
@@ -144,10 +155,6 @@ nav{
 
 }
 
-
-
-
-
 .banner-title{
 
     display: inline-block;
@@ -198,25 +205,21 @@ nav{
 
 /* player list style */
 .player-list{
-    display: flex;
+   /*display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    /*display: grid;
+    justify-content: center;*/
+  display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-column-gap: 30px;
-    grid-row-gap: 27px;*/
+    grid-row-gap: 27px;  /**/
 }
 .player{
-    /*box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
-    padding: 15px 15px 33px 15px;
-    border-radius: 10px;*/
+
 box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
 
 transition: transform 0.5s;
 padding: 15px 15px 33px 15px;
-
 margin: 10px;
-/*grid-template-columns: auto auto auto;*/
 
 height: auto;
 max-width: 48vh;
